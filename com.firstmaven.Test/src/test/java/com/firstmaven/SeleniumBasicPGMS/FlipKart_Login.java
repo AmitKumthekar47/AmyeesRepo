@@ -13,6 +13,9 @@ public class FlipKart_Login {
 	   File src=new File("D:\\#Amit_WorkSpace\\com.firstmaven.Test\\ObjectRepo.properties");
 	   FileInputStream fis=new FileInputStream(src);
 	   Properties pro=new Properties();
+	   
+	   
+	   
 	   pro.load(fis);
 	   
 		System.setProperty("webdriver.chrome.driver",pro.getProperty("DriverPath"));
@@ -20,6 +23,7 @@ public class FlipKart_Login {
 		driver.get(pro.getProperty("BaseUrl"));
 		driver.manage().window().maximize();
 		Thread.sleep(5000);
+		
 		driver.close();
 	}
 
