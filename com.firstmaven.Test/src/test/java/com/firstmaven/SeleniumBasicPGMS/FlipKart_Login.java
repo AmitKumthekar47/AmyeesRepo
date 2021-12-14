@@ -16,6 +16,7 @@ public class FlipKart_Login {
 	   
 	   pro.load(fis);
 	   
+	   
 		System.setProperty("webdriver.chrome.driver",pro.getProperty("DriverPath"));
 		WebDriver driver=new ChromeDriver();
 		driver.get(pro.getProperty("BaseUrl"));
