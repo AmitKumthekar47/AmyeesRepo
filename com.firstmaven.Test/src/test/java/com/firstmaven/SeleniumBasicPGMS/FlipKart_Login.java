@@ -14,8 +14,6 @@ public class FlipKart_Login {
 	   FileInputStream fis=new FileInputStream(src);
 	   Properties pro=new Properties();
 	   
-	   
-	   
 	   pro.load(fis);
 	   
 		System.setProperty("webdriver.chrome.driver",pro.getProperty("DriverPath"));
